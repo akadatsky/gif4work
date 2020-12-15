@@ -6,7 +6,7 @@ import com.akadatsky.gif4work.presentation.Repository
 class RepositoryImpl(private val apiService: ApiService) : Repository {
 
     override suspend fun performSearch(query: String): List<Data> {
-        val response = apiService.search(API_KEY, query, 10)
+        val response = apiService.search(API_KEY, query)
         return response?.body()?.data ?: emptyList()
     }
 
