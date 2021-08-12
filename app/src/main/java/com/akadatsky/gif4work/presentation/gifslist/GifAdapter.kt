@@ -1,4 +1,4 @@
-package com.akadatsky.gif4work.presentation
+package com.akadatsky.gif4work.presentation.gifslist
 
 import android.app.Activity
 import android.view.View
@@ -9,8 +9,7 @@ import com.akadatsky.gif4work.R
 import com.akadatsky.gif4work.data.Data
 import com.bumptech.glide.Glide
 
-class GifAdapter constructor(private val activity: Activity) :
-    RecyclerView.Adapter<GifViewHolder>() {
+class GifAdapter(private val activity: Activity) : RecyclerView.Adapter<GifViewHolder>() {
 
     var results: List<Data> = emptyList()
 
@@ -31,10 +30,8 @@ class GifAdapter constructor(private val activity: Activity) :
 
     override fun getItemId(i: Int): Long = i.toLong()
     override fun getItemCount(): Int = results.size
-
 }
 
-class GifViewHolder constructor(itemView: View) :
-    RecyclerView.ViewHolder(itemView) {
+class GifViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val gifView: ImageView = itemView.findViewById(R.id.gif_view)
 }

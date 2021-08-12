@@ -1,16 +1,14 @@
-package com.akadatsky.gif4work.presentation
+package com.akadatsky.gif4work.presentation.gifslist
 
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.akadatsky.gif4work.R
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 import org.koin.android.ext.android.inject
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,10 +40,10 @@ class MainActivity : AppCompatActivity() {
             toast(R.string.search_text_empty)
             return
         }
-        viewModel.performSearch(searchText).observe(this, Observer {
+        viewModel.performSearch(searchText).observe(this) {
             adapter.results = it
             adapter.notifyDataSetChanged()
-        })
+        }
     }
 
 }

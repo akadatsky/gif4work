@@ -9,7 +9,7 @@ interface ApiService {
     @GET("gifs/search")
     suspend fun search(
         @Query("api_key") apiKey: String,
-        @Query("q") query: String
+        @Query("q") query: String,
     ): Response<SearchResult>?
 
 }

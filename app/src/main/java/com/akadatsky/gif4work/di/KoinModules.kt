@@ -3,8 +3,8 @@ package com.akadatsky.gif4work.di
 import com.akadatsky.gif4work.SERVER_URL
 import com.akadatsky.gif4work.data.ApiService
 import com.akadatsky.gif4work.data.RepositoryImpl
-import com.akadatsky.gif4work.presentation.MainActivityViewModel
 import com.akadatsky.gif4work.presentation.Repository
+import com.akadatsky.gif4work.presentation.gifslist.MainActivityViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.bind
 import org.koin.dsl.module

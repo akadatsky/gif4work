@@ -1,10 +1,11 @@
-package com.akadatsky.gif4work.presentation
+package com.akadatsky.gif4work.presentation.gifslist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.akadatsky.gif4work.data.Data
+import com.akadatsky.gif4work.presentation.Repository
 import kotlinx.coroutines.launch
 import org.koin.core.KoinComponent
 import org.koin.core.inject

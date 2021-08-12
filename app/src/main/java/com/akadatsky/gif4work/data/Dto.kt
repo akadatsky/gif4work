@@ -8,7 +8,7 @@ data class SearchResult(
     @SerializedName("meta")
     val meta: Meta,
     @SerializedName("pagination")
-    val pagination: Pagination
+    val pagination: Pagination,
 )
 
 data class Data(
@@ -53,7 +53,7 @@ data class Data(
     @SerializedName("user")
     val user: User,
     @SerializedName("username")
-    val username: String
+    val username: String,
 )
 
 data class Meta(
@@ -62,7 +62,7 @@ data class Meta(
     @SerializedName("response_id")
     val responseId: String,
     @SerializedName("status")
-    val status: Int
+    val status: Int,
 )
 
 data class Pagination(
@@ -71,7 +71,7 @@ data class Pagination(
     @SerializedName("offset")
     val offset: Int,
     @SerializedName("total_count")
-    val totalCount: Int
+    val totalCount: Int,
 )
 
 data class Analytics(
@@ -80,7 +80,7 @@ data class Analytics(
     @SerializedName("onload")
     val onload: Onload,
     @SerializedName("onsent")
-    val onsent: Onsent
+    val onsent: Onsent,
 )
 
 data class Images(
@@ -131,7 +131,7 @@ data class Images(
     @SerializedName("preview_webp")
     val previewWebp: PreviewWebp,
     @SerializedName("480w_still")
-    val wStill: WStill
+    val wStill: WStill,
 )
 
 data class User(
@@ -154,22 +154,22 @@ data class User(
     @SerializedName("username")
     val username: String,
     @SerializedName("website_url")
-    val websiteUrl: String
+    val websiteUrl: String,
 )
 
 data class Onclick(
     @SerializedName("url")
-    val url: String
+    val url: String,
 )
 
 data class Onload(
     @SerializedName("url")
-    val url: String
+    val url: String,
 )
 
 data class Onsent(
     @SerializedName("url")
-    val url: String
+    val url: String,
 )
 
 data class Downsized(
@@ -180,7 +180,7 @@ data class Downsized(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class DownsizedLarge(
@@ -191,7 +191,7 @@ data class DownsizedLarge(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class DownsizedMedium(
@@ -202,7 +202,7 @@ data class DownsizedMedium(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class DownsizedSmall(
@@ -213,7 +213,7 @@ data class DownsizedSmall(
     @SerializedName("mp4_size")
     val mp4Size: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class DownsizedStill(
@@ -224,7 +224,7 @@ data class DownsizedStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedHeight(
@@ -243,7 +243,7 @@ data class FixedHeight(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedHeightDownsampled(
@@ -258,7 +258,7 @@ data class FixedHeightDownsampled(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedHeightSmall(
@@ -277,7 +277,7 @@ data class FixedHeightSmall(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedHeightSmallStill(
@@ -288,7 +288,7 @@ data class FixedHeightSmallStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedHeightStill(
@@ -299,7 +299,7 @@ data class FixedHeightStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedWidth(
@@ -318,7 +318,7 @@ data class FixedWidth(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedWidthDownsampled(
@@ -333,7 +333,7 @@ data class FixedWidthDownsampled(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedWidthSmall(
@@ -352,7 +352,7 @@ data class FixedWidthSmall(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedWidthSmallStill(
@@ -363,7 +363,7 @@ data class FixedWidthSmallStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class FixedWidthStill(
@@ -374,7 +374,7 @@ data class FixedWidthStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class Hd(
@@ -385,14 +385,14 @@ data class Hd(
     @SerializedName("mp4_size")
     val mp4Size: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class Looping(
     @SerializedName("mp4")
     val mp4: String,
     @SerializedName("mp4_size")
-    val mp4Size: String
+    val mp4Size: String,
 )
 
 data class Original(
@@ -415,7 +415,7 @@ data class Original(
     @SerializedName("webp_size")
     val webpSize: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class OriginalMp4(
@@ -426,7 +426,7 @@ data class OriginalMp4(
     @SerializedName("mp4_size")
     val mp4Size: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class OriginalStill(
@@ -437,7 +437,7 @@ data class OriginalStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class Preview(
@@ -448,7 +448,7 @@ data class Preview(
     @SerializedName("mp4_size")
     val mp4Size: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class PreviewGif(
@@ -459,7 +459,7 @@ data class PreviewGif(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class PreviewWebp(
@@ -470,7 +470,7 @@ data class PreviewWebp(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )
 
 data class WStill(
@@ -481,5 +481,5 @@ data class WStill(
     @SerializedName("url")
     val url: String,
     @SerializedName("width")
-    val width: String
+    val width: String,
 )

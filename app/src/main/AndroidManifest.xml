@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gif4work">
 
-        <activity android:name=".presentation.MainActivity">
+        <activity android:name=".presentation.gifslist.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
