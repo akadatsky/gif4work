@@ -40,10 +40,11 @@ class MainActivity : AppCompatActivity() {
             toast(R.string.search_text_empty)
             return
         }
-        viewModel.performSearch(searchText).observe(this) {
+        viewModel.searchResult.observe(this) {
             adapter.results = it
             adapter.notifyDataSetChanged()
         }
+        viewModel.performSearch(searchText)
     }
 
 }

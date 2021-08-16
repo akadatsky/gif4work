@@ -1,6 +1,5 @@
 package com.akadatsky.gif4work.presentation.gifslist
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -14,12 +13,12 @@ class MainActivityViewModel : ViewModel(), KoinComponent {
 
     private val repository: Repository by inject()
 
-    fun performSearch(query: String): LiveData<List<Data>> {
-        val result = MutableLiveData<List<Data>>()
+    val searchResult = MutableLiveData<List<Data>>()
+
+    fun performSearch(query: String) {
         viewModelScope.launch {
-            result.value = repository.performSearch(query)
+            searchResult.value = repository.performSearch(query)
         }
-        return result
     }
 
 }
